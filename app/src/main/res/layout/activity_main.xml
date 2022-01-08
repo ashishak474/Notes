@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    tools:context=".activity.MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tittle"
+        android:layout_alignBottom="@id/tittle"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="my"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_notes"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tittle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:hint="@string/search_your_note"
+        android:maxEms="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+<!--    <SearchView-->
+<!--        android:id="@+id/search_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@drawable/edittxt_bg"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tittle"-->
+<!--        -->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:queryHint="Search Here" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        tools:itemCount="4"
+        tools:listitem="@layout/notes_layout" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_above="@+id/bottom_layout"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/edit_png"
+        tools:ignore="UsingOnClickInXml" />
+
+
+
+</RelativeLayout>

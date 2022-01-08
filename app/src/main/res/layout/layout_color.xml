@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_color"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Colour"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_color1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_note_color2"
+                />
+
+            <ImageView
+                android:id="@+id/color1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_color2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_note_color4"
+                />
+
+            <ImageView
+                android:id="@id/color3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_color3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_note_color3"
+                />
+
+            <ImageView
+                android:id="@id/color3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view_color4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_note_color1"
+                />
+
+            <ImageView
+                android:id="@id/color4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/save_icon"
+                android:padding="10dp"
+                app:tint="@color/white" />
+
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Colour"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

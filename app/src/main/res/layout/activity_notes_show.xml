@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotesShowActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <View
+        android:id="@+id/color_idicator"
+        android:layout_width="6dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/color_indicator"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+
+    <EditText
+        android:id="@+id/et_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/color_idicator"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/transparent"
+        android:hint="Tittle"
+        android:maxLines="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:layout_below="@+id/et_tittle"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tittle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/transparent"
+        android:hint="Note" />
+
+
+    <ImageView
+        android:id="@+id/gallary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_image_24" />
+
+    <ImageView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/gallary"
+        android:src="@drawable/ic_baseline_color_lens_24" />
+
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Date"
+        android:textSize="20sp"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_menu_24"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
